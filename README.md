@@ -20,6 +20,15 @@ Digit Recognizer. Introduction to Deep Learning, Neural Networks, and Pattern Re
   -   Training rows: 37,800
   -   Validation rows: 4,200
 -   **Data dictionary**:
--   
+
+| Name       | Modeling Role       | Measurement Level       | Description       |
+|----------------|----------------|----------------|----------------|
+| label  | Actual value of the digit  | int  | The digit that was drawn by the user. Each digit is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total (i.e., 784 total pixel columns)  |
+| pixel0  | Single pixel-value of associated pixel. | int  | A value between 0 and 255, inclusive. Value of pixel indicates the lightness or darkness of that pixel, with higher numbers meaning darker. |
+| pixel1  | Single pixel-value of associated pixel.  | int  | A value between 0 and 255, inclusive. Value of pixel indicates the lightness or darkness of that pixel, with higher numbers meaning darker.  |
+| ...  | ...  | ...  | ... |
+| pixel783  | Single pixel-value of associated pixel  | int  | A value between 0 and 255, inclusive. Value of pixel indicates the lightness or darkness of that pixel, with higher numbers meaning darker. |
+
+
 
 
