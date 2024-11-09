@@ -14,7 +14,7 @@ Digit Recognizer. Introduction to Deep Learning, Neural Networks, and Pattern Re
 - **Out-of-scope use cases**: Any use beyond GWU DNSC 3288, as an educational example, is out-of-scope.
 
 ## Training data
-- **Source of training data**: https://www.kaggle.com/c/digit-recognizer/data found on GWU Blackboard. Email jphall@gwu.edu for more information.
+- **Source of training data**: GWU Blackboard. Email jphall@gwu.edu for more information.
 - **How training data was divided into training and validation data**: The training data was divided into training and validation using the *train_test_split* function from the *model_selection* module of the *scikit-learn* library. The *test_size* parameter was set to 0.1 so that 10% of the 42,000 rows in the *training.csv* would be set aside for validation and the remaining 90% of the data would be use for fitting the model. Furthermore, the *random_state* parameter was set to 0 for reproducibility.
 - **Number of rows in training and validation data**:
   -   Training rows: 37,800
@@ -28,6 +28,26 @@ Digit Recognizer. Introduction to Deep Learning, Neural Networks, and Pattern Re
 | pixel1  | Single pixel-value of associated pixel.  | int  | A value between 0 and 255, inclusive. Value of pixel indicates the lightness or darkness of that pixel, with higher numbers meaning darker.  |
 | ...  | ...  | ...  | ... |
 | pixel783  | Single pixel-value of associated pixel  | int  | A value between 0 and 255, inclusive. Value of pixel indicates the lightness or darkness of that pixel, with higher numbers meaning darker. |
+
+## Test Data
+- **Source of test data**: GWU Blackboard. Email jphall@gwu.edu for more information.
+- **Number of rows in test data**: 28,000
+- **Differences in columns between training and test data**: Test data did not contain a *label* column.
+
+## Model details
+- **Columns used as inputs in the final model**: All pixel columns ('pixel0-pixel783') used for fitting and validation to minimize error.
+- **Column used as target in the final model**: 'Label'
+- **Type of model**: Artificial Neural Network
+- **Software used to implement the model**: Python, Pandas, Matplotlib, NumPy, Scikit-Learn, TensorFlow, Keras
+- **Version of the modeling software**:
+  - Python: 3.10.12
+  - Pandas: 2.2.2
+  - Matplotlib: 3.8.0
+  - NumPy: 1.26.4
+  - Scikit-Learn: 1.5.2
+  - TensorFlow: 2.17.0
+  - Keras: 3.4.1
+- **Hyperparameters and other setting of model**:
 
 
 
