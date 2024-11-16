@@ -102,7 +102,11 @@ history = model.fit(X_train, y_train_cat,
     - The high number of hidden nodes applied can lead to potential overfitting.
     - Model may have issues in predicting digits that are underrepresented in the dataset. In this case, may be appropriate to add class weights to the loss function.
     - Training is slow. A fast CPU and GPU likely necessary to obtain better loss and accuracy metrics.
-  - ** Real-world risks: Who, What, When or How**:
+  - **Real-World risks: Who, What, When or How**:
+    - **Who**: Banks, financial institutions, financial systems. **What**: Misclassified digits leading to incorrect decisions. **When**: Anytime a similar predictive digit rezognition algorithm automates decision making processes without oversight. **How**: Incorrect withdrawal amounts dispersed by ATMs or banking applications when a handwritten check is inputted; misclassification of handwritten checks leading to funds being deposited into incorrect account.
+    - **Who**: Individuals who submit handwritten forms to be processed and stored. **What**: Privacy and processing concerns. **When**: Anytime a handwritten assessment or form is submitted to be processed automatically. **How**: Handwritten forms submitted at educational institutions, in which the documents are processed by computer systems, may incorrectly label and store the data; students may be unfailrly penalized when taking assessments unless they are graded manually; consensus data submitted by individuals by mail that are likely processed in an automatic fashion may be incorrectly stored, leading to faulty profiles.
+    - **Who**: Any entity that uses a similar algorithm to automate high stakes processes. **What**: A poorly deisgned model that is hastily deployed, lacking proper governance, oversight, and controls, can negatively affect people at scale.**When**: When manual review is viewed by an entity as redundant, unneccesary, and costly to the organization **How**: Automated processing of forms and files by government, public, and health care services may lead to errors in records and billing.
+  - **Potential uncertainties relating to the impacts of using model**:
     - 
 
 
