@@ -78,6 +78,25 @@ history = model.fit(X_train, y_train_cat,
           callbacks=[early_stopping],
           verbose=0 # turn off training log
                     )
+```
+
+## Quantitative Analysis
+- Models were assessed primarily with **Categorical Cross Entropy** and **Accuracy**. See details below:
+  
+| Train Categorical Cross Entropy    | Validation Categorical Cross Entropy   | Test Categorical Cross Entropy   |
+|-------------|-------------|-------------|
+| 0.0567 | 0.0908 | Unknown |
+
+| Train Accuracy    | Validation Accuracy   | Test Accuracy   |
+|-------------|-------------|-------------|
+| 0.9954 | 0.9748 | Unknown |
+
+## Loss Curve
+
+
+
+
+
 
 
 
