@@ -118,6 +118,10 @@ history = model.fit(X_train, y_train_cat,
       - Differences in CPU/GPU quality may lead to different outcomes.
       - Small changes in inputs could lead to large changes in results of model.
       - Black-box nature causes difficulties with debugging.
+    - **Real-world uncertainty risks: Who, What, When, and How**:
+      - **Who**: Any entity that relies on model for critical decision making processes. **What**: Misclassification leading to inaccurate, unjust outcomes for individuals at scale. **When**: Anytime these models are deployed without proper governance, controls, oversight, and appeal processes in place; regulatory compliance measures are inconsistent; when security on similar models is breached - hard to pinpoint where exactly breached occured unless model properly document and monitored at all time, given so many parameters and inputs **How**: Model outputs invalid outputs for an individual and the individual can not fight the inaccuracies of model because the developers don't have proper understanding of its decision making processes; decision makers aren't able to efficiently interpret the final decision to an individual that the model affects; model was rushed to be deployed for first-mover advantage and so owners of model either aren't able to or are unwilling to attempt to explain its functions to end-users; most institutions have no incentive to make their models more transparent so interpretable and explainable outcomes likely unrealistic in most settings where similar models are deployed; if the model can't be explained, debugging the model and providing users the right to appeal its decision making processes, is not possible; end-users could manipulate the model to their benefit if they realize e.g., an Aversarial Examples attack.
+  - **Description of unexpected results**:
+    - 
 
 
 
