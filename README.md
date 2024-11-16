@@ -48,6 +48,37 @@ Digit Recognizer. Introduction to Deep Learning, Neural Networks, and Pattern Re
   - TensorFlow: 2.17.0
   - Keras: 3.4.1
 - **Hyperparameters and other setting of model**:
+```
+early_stopping = callbacks.EarlyStopping(
+    min_delta=0.001, # minimum amount of change to count as an improvement
+    patience=10, # how many epochs to wait before stopping
+    restore_best_weights=True
+)
+
+model = Sequential([
+    Input([input_dimensions]),
+    Dense(units=128, activation='relu'),
+    Dropout(0.15),
+    BatchNormalization(),
+    Dense(units=128, activation='relu'),
+    Dropout(0.15),
+    BatchNormalization(),
+    Dense(units=number_classes, activation='softmax')
+])
+
+model.compile(
+    optimizer='rmsprop',
+    loss='categorical_crossentropy'
+)
+
+history = model.fit(X_train, y_train_cat,
+          validation_data=(X_valid, y_valid_cat),
+          batch_size=32,
+          epochs=200,
+          callbacks=[early_stopping],
+          verbose=0 # turn off training log
+                    )
+
 
 
 
