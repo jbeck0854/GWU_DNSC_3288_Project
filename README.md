@@ -92,7 +92,7 @@ history = model.fit(X_train, y_train_cat,
 | 0.9954 | 0.9748 | Unknown |
 
 ## Loss Curve
-
+images/Loss Curve.png
 
 
 
