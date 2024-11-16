@@ -94,6 +94,17 @@ history = model.fit(X_train, y_train_cat,
 ## Loss Curve
 ![Loss Curve](images/Loss%20Curve.png)
 
+## Ethical Considerations
+- **Potential Negative impacts of using model**:
+  - **Math and software related problems**:
+    - Model took more than 6 minutes to train on Windows laptop. Lengthy process of fine-tuning parameters, e.g., batch size, the patience, and number of nodes within each hidden layer, for my model to eventually fit and converge with desired validation loss.
+    - Given the number of inputs applied to the model and the large number of nodes designated within each hidden layer, as well as a Dropout function applied to introduce random shutting off of neurons during training, tracing the decision making process of the algorithm would be practically impossible.
+    - The high number of hidden nodes applied can lead to potential overfitting.
+    - Model may have issues in predicting digits that are underrepresented in the dataset. In this case, may be appropriate to add class weights to the loss function.
+    - Training is slow. A fast CPU and GPU likely necessary to obtain better loss and accuracy metrics.
+  - ** Real-world risks: Who, What, When or How**:
+    - 
+
 
 
 
