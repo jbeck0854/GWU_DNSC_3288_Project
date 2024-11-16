@@ -107,7 +107,17 @@ history = model.fit(X_train, y_train_cat,
     - **Who**: Individuals who submit handwritten forms to be processed and stored. **What**: Privacy and processing concerns. **When**: Anytime a handwritten assessment or form is submitted to be processed automatically. **How**: Handwritten forms submitted at educational institutions, in which the documents are processed by computer systems, may incorrectly label and store the data; students may be unfailrly penalized when taking assessments unless they are graded manually; consensus data submitted by individuals by mail that are likely processed in an automatic fashion may be incorrectly stored, leading to faulty profiles.
     - **Who**: Any entity that uses a similar algorithm to automate high stakes processes. **What**: A poorly deisgned model that is hastily deployed, lacking proper governance, oversight, and controls, can negatively affect people at scale.**When**: When manual review is viewed by an entity as redundant, unneccesary, and costly to the organization **How**: Automated processing of forms and files by government, public, and health care services may lead to errors in records and billing.
   - **Potential uncertainties relating to the impacts of using model**:
-    - 
+    - **Math and Software Related Problems**:
+      -  Vast number of computations taking place throughout the model at all times, would be extremely difficult to track manually.
+      -  Training was stopped when 10 epochs did not lead to noticeable improvement in validation loss. This number was chosen because the model could no longer converge (potentially due to lack of CPU power) with a larger parameter chosen.
+      -  Determining the 'best model' is largely a procedure of random guessing at the onset of building the architecture of model.
+        - Black-box nature of model design. Very likely that additional parameters could have been used to improve loss and accuracy metrics.
+      - Interpretation and explainability of why some parameter (e.g., choosing 'rmsprop' over the 'adam' SGD optimizer) works better on model is difficult.
+      - 'ReLu' activation function can lead to 'dead neurons', causing fitting of model to slow drastically, if not end altogether, without notifying the programmer that this has occurred.
+      - Training data may not accurately represent population (e.g., if training contains all neatly written digits and testing contains sloppily written digits, or vice-versa).
+      - Differences in CPU/GPU quality may lead to different outcomes.
+      - Small changes in inputs could lead to large changes in results of model.
+      - Black-box nature causes difficulties with debugging.
 
 
 
