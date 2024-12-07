@@ -89,7 +89,7 @@ history = model.fit(X_train, y_train_cat,
 
 | Train Accuracy    | Validation Accuracy   | Test Accuracy   |
 |-------------|-------------|-------------|
-| 0.9954 | 0.9748 | Unknown |
+| 0.9954 | 0.9748 | 0.9656 |
 
 ## Loss Curve
 ![Loss Curve](images/Loss%20Curve.png)
