@@ -2,7 +2,7 @@
 Digit Recognizer. Introduction to Deep Learning, Neural Networks, and Pattern Recognition.
 
 ## Basic Information
-- **Person or organization developing model**: Jonathan, jon@yahoo.com
+- **Person or organization developing model**: Jonathan, jonathan.beck@gwmail.gwu.edu
 - **Model date**: November, 2024
 - **Model version**: 0.1
 - **License**: MIT
